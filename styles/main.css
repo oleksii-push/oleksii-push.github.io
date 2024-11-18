@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  min-height: 50vh;
+}
+
+.dark-bg {
+  background: linear-gradient(122deg, rgba(11, 11, 11) 0%, rgba(22, 22, 22) 100%);
+  color: #FFFFFF;
+}
+
+.dark-bg > h1 {
+  color: #FFFFFF;
+}
+
+.dark-bg > h2 {
+  color: #FFFFFF;
+}
+
+#title {
+  background: rgb(74,74,215);
+  background: linear-gradient(122deg, rgba(11, 11, 11) 0%, rgba(22, 22, 22) 100%);
+  color: #FFFFFF;
+}
+
+figure {
+  row-gap: 16px;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 64px;
+}
+
+.radial-border {
+  border-style: solid;
+  border-width: 15px;
+  border-image: radial-gradient(rgba(255,255,255,1) 60%, rgba(255,255,255,0) 100%) 1;
+}
+
+.slide {
+  width: 1400px;
+  color: #232323;
+
+  opacity: 0.3;
+  transition: opacity 1s;
+}
+
+.slide.present {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.visible > * {
+  opacity: 1;
+}
+
+#philosophy > h1 {
+  font-family: "Cormorant Infant", serif;
+  font-size: 12em;
+}
+
+* {
+  font-family: "Anonymous Pro", monospace;
+}
+
+.slide h1 {
+  font-family: "Anonymous Pro", monospace;
+  font-size: 8em;
+}
+
+.slide h2 {
+  font-family: "Anonymous Pro", monospace;
+  font-size: 3em;
+}
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.slide > hgroup {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.slide > hgroup > h1 {
+  font-size: 5em;
+  margin-bottom: 0;
+}
+
+.slide > hgroup > h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+ul {
+  text-align: left;
+}
+
+ul > li {
+  font-size: 3em;
+  font-family: "Dela Gothic One", serif;
+}
+
+.slide, .centered > h1 {
+  text-align: center;
+}
+
+.slide.paper {
+  opacity: 1;
+}
+
+.slide.overview-image {
+  opacity: 1;
+}
+
+
+#impress .step .substep.substep-visible.fade-up {
+  animation-duration: 1s;
+  animation-name: fade-up;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
