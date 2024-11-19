@@ -1,8 +1,3 @@
-#impress .step {
-  height: 100vh;
-  width: 100vw;
-}
-
 #impress .step .substep {
     opacity: 0;
 }
